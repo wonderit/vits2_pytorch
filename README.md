@@ -32,6 +32,11 @@ Would recommend experts to rename the ckpts to *_0.pth and starting the training
     1. For mult-speaker setting, download and extract the VCTK dataset, and downsample wav files to 22050 Hz. Then rename or create a link to the dataset folder: `ln -s /path/to/VCTK-Corpus/downsampled_wavs DUMMY2`
 6. Build Monotonic Alignment Search and run preprocessing if you use your own datasets.
 
+```shell
+pip3 install torch torchvision torchaudio
+
+```
+
 ```sh
 # Cython-version Monotonoic Alignment Search
 cd monotonic_align
